@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Noon",
+  "version": "1.0",
+  "description": "Replaces 12 PM with 'noon' in Google Calendar because we don't mess with 12.",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "*://calendar.google.com/calendar/*"
+      ]
+    }
+  ]
+}
